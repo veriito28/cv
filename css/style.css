@@ -1,16 +1,8 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-
 body {
     margin: 0;
     background: #fff;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
 body a,
 .agile_form input[type="submit"] {
     -webkit-transition: 0.5s all;
@@ -20,39 +12,25 @@ body a,
     transition: 0.5s all;
     text-decoration: none;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
 }
-
 p {
     margin: 0;
     line-height: 1.8;
     font-size: 1em;
     color: #000;
 }
-
-ul,
-label {
+ul,label {
     margin: 0;
     padding: 0;
 }
-
-body a:hover,
-body a:focus {
+body a:hover,body a:focus {
     text-decoration: none;
     outline: none;
 }
-
-
-/*-- menu-navigation --*/
-
+/* Menu */
 nav {
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -68,7 +46,6 @@ nav {
     /* IT'S OVER 9000! */
     padding-top: 4em;
 }
-
 #menuToggle {
     display: block;
     position: fixed;
@@ -78,7 +55,6 @@ nav {
     width: 46px;
     z-index: 9999;
 }
-
 #menuToggle span {
     background: #7690a1;
     display: block;
@@ -88,9 +64,7 @@ nav {
     top: 45%;
     width: 60%;
 }
-
-#menuToggle span:before,
-#menuToggle span:after {
+#menuToggle span:before,#menuToggle span:after {
     background: #7690a1;
     content: '';
     display: block;
@@ -103,11 +77,9 @@ nav {
     transform: rotate(0deg);
     width: 100%;
 }
-
 #menuToggle span:after {
     top: 250%;
 }
-
 nav a {
     color: #fff;
     display: block;
@@ -116,7 +88,6 @@ nav a {
     font-weight: 300;
     letter-spacing: 1px;
 }
-
 nav a:after {
     background: #7ecaf6;
     content: '';
@@ -129,28 +100,21 @@ nav a:after {
     width: 0;
     margin-top: 0.2em;
 }
-
 nav a:hover:after {
     width: 100%;
 }
-
-.menu nav a:hover,
-.menu nav a:focus {
+.menu nav a:hover,.menu nav a:focus {
     color: #cfdce5;
 }
-
 .open nav {
     right: 0;
 }
-
 .open #menuToggle span {
     background: transparent;
     left: 20%;
     top: 45%;
 }
-
-.open #menuToggle span:before,
-.open #menuToggle span:after {
+.open #menuToggle span:before,.open #menuToggle span:after {
     background: white;
     top: 0;
     -moz-transform: rotate(45deg);
@@ -158,14 +122,12 @@ nav a:hover:after {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
 .open #menuToggle span:after {
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
 #menuToggle .navClosed {
     -moz-transition: background 0.1s linear;
     -o-transition: background 0.1s linear;
@@ -173,15 +135,13 @@ nav a:hover:after {
     transition: background 0.1s linear;
 }
 
-#menuToggle .navClosed:before,
-#menuToggle .navClosed:after {
+#menuToggle .navClosed:before,#menuToggle .navClosed:after {
     -moz-transition: top 0.2s linear 0.1s, -moz-transform 0.2s linear 0.1s;
     -o-transition: top 0.2s linear 0.1s, -o-transform 0.2s linear 0.1s;
     -webkit-transition: top 0.2s linear, -webkit-transform 0.2s linear;
     -webkit-transition-delay: 0.1s, 0.1s;
     transition: top 0.2s linear 0.1s, transform 0.2s linear 0.1s;
 }
-
 #menuToggle .navOpen {
     -moz-transition: background 0.1s linear 0.2s;
     -o-transition: background 0.1s linear 0.2s;
@@ -189,26 +149,18 @@ nav a:hover:after {
     -webkit-transition-delay: 0.2s;
     transition: background 0.1s linear 0.2s;
 }
-
-#menuToggle .navOpen:before,
-#menuToggle .navOpen:after {
+#menuToggle .navOpen:before,#menuToggle .navOpen:after {
     -moz-transition: top 0.2s linear, -moz-transform 0.2s linear;
     -o-transition: top 0.2s linear, -o-transform 0.2s linear;
     -webkit-transition: top 0.2s linear, -webkit-transform 0.2s linear;
     transition: top 0.2s linear, transform 0.2s linear;
 }
-
-
-/*-- //menu-navigation --*/
-
-/*.w3ls-section {
+/*-- //Menu --*/
+.w3ls-section {
     padding: 5em 0;
 }
-*/
-
 /* about */
-
-h3.agileits-title {
+h3.section-title {
     font-size: 2.5em;
     text-transform: uppercase;
     font-weight: 600;
@@ -216,7 +168,6 @@ h3.agileits-title {
     color: #1853a1;
     text-align: center;
 }
-
 a.wthree-.about-link {
     color: #fff;
     border: 1px solid #03afdd;
@@ -231,34 +182,22 @@ a.wthree-.about-link {
     display: inline-block;
     text-transform: uppercase;
 }
-
-.agileits-about-grid p {
+.about-grid p {
     width: 80%;
     margin: 0 auto;
 }
-
-.agileits-about-grid1 {
+.about-grid1 {
     background: #7bd0c1;
 }
-
-.agileits-about-grid2 {
+.about-grid2 {
     background: #f2849e;
 }
-
-.agileits-about-grid3 {
+.about-grid3 {
     background: #7ecaf6;
 }
-
-
-/* //about */
-
-
-/* about-bottom */
-
-.agileits-about-btm {
+.about-btm {
     padding-bottom: 4em;
 }
-
 .ab1 {
     padding: 2em;
 }
@@ -266,16 +205,13 @@ a.wthree-.about-link {
     color: #fff;
     font-size: 2em;
 }
-
-
-h4.agileinfo-head {
+h4.about-head {
     color: #005da2;
     text-transform: capitalize;
     font-weight: 600;
     margin: 0.7em 0;
     font-size: 1.8em;
 }
-
 .ab1 h5 {
     color: #000;
     font-size: 1em;
@@ -283,59 +219,43 @@ h4.agileinfo-head {
     font-weight: 600;
     margin: 1em 0 0.2em;
 }
-
 .ab1 p {
     color: #fff;
 }
-
-
-/* //about-bottom */
-
-
+/* //about */
 /* skills */
-
-.w3_agileits-service-left h3 {
+.service-left h3 {
     text-align: left;
     color: #fff;
 }
-
 .skills-right {
     text-align: center;
     margin: 0 auto;
     width: 50%;
 }
-
 div#skills {
     background: url(../images/bg1.jpg) fixed;
     background-size: cover;
 }
-
-
-/*-- Skills bar effects --*/
-
 .skill-grids {
     margin: 3em 0;
 }
-
 .skills h4 {
     font-size: 1.8em;
     color: #4378ff;
     letter-spacing: 2px;
     margin-bottom: 0.8em;
 }
-
 .skills-w3lsleft ul li {
     display: block;
     font-size: 1em;
     color: #999;
     margin-top: 1em;
 }
-
 .skills-w3lsleft ul li i.fa {
     font-size: 1.2em;
     margin-right: 0.5em;
 }
-
 .skillbar {
     position: relative;
     display: inline-block;
@@ -350,7 +270,6 @@ div#skills {
     border-radius: 3px;
     width: 100%;
 }
-
 .skillbar-title {
     position: absolute;
     top: 0;
@@ -367,7 +286,6 @@ div#skills {
     height: 35px;
     line-height: 35px;
 }
-
 .skillbar-bar {
     height: 35px;
     width: 0px;
@@ -377,7 +295,6 @@ div#skills {
     border-radius: 3px;
     display: inline-block;
 }
-
 .skill-bar-percent {
     position: absolute;
     right: 10px;
@@ -387,15 +304,10 @@ div#skills {
     line-height: 35px;
     color: rgba(0, 0, 0, 0.88);
 }
-
-
-/*-- //Skills bar effects --*/
-
 .vertical-skills {
     margin-top: 85px;
     text-align: center;
 }
-
 .vertical-skills li {
     display: inline-block;
     position: relative;
@@ -403,7 +315,6 @@ div#skills {
     height: 200px;
     margin: 0 10px;
 }
-
 .vertical-skills li:before {
     content: '';
     background: #03afdd;
@@ -415,7 +326,6 @@ div#skills {
     border-radius: 50%;
     position: absolute;
 }
-
 .vertical-skills li:after {
     content: '';
     background: #9a9a9a;
@@ -426,13 +336,11 @@ div#skills {
     height: 93px;
     position: absolute;
 }
-
 @media (max-width: 400px) {
     .vertical-skills li {
         width: 25px;
     }
 }
-
 .vertical-skills li span.skill {
     position: absolute;
     animation-duration: 5s;
@@ -442,7 +350,6 @@ div#skills {
     bottom: 0;
     color: #fff;
 }
-
 .vertical-skills li div.skill {
     position: absolute;
     animation-duration: 5s;
@@ -453,7 +360,6 @@ div#skills {
     color: #fff;
     z-index: 2;
 }
-
 .vertical-skills li span.title {
     position: absolute;
     left: 0;
@@ -464,7 +370,6 @@ div#skills {
     color: #fff;
     font-weight: 600;
 }
-
 span.value {
     transform: rotate(-90deg);
     display: inline-block;
@@ -474,40 +379,14 @@ span.value {
     letter-spacing: 2px;
     font-size: 1em;
 }
-
-
-/* ANIMATIONS */
-/*
-@keyframes height {
-    0%,
-    100% {
-        transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85);
-    }
-    0% {
-        height: 0;
-    }
-    100% {
-        max-height: 100%;
-    }
-}
-*/
-
-
 /* //skills */
-
-
-
 /*-- gallery --*/
-
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:hover,
-.nav-tabs>li.active>a:focus {
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus {
     color: #ffffff;
     cursor:pointer;
     background: #03afdd;
     border: solid 2px #03afdd;
 }
-
 .nav-tabs>li>a {
     margin-right: 3px;
     font-size: 1em;
@@ -521,37 +400,30 @@ span.value {
     padding: .5em 1em;
     text-transform: capitalize;
 }
-
 .nav-tabs>li>a:focus {
     background: transparent;
 }
-
 .nav-tabs {
     border-bottom: none;
     margin: 0 auto 3em;
     width: 40%;
     text-align: center;
 }
-
 .nav-tabs>li {
     margin: 0 10px 0 0;
 }
-
 .nav-tabs>li>a:hover {
     color: #FFFFFF;
     background: #03afdd;
     border: solid 2px #03afdd;
 }
-
 .w3_tab_img_left {
     padding: 0;
 }
-
 .agile-gallery-info {
     padding: 1em;
     background: #ffffff;
 }
-
 .agile-gallery-info h5 {
     color: #000000;
     font-size: 1em;
@@ -560,14 +432,12 @@ span.value {
     letter-spacing: 4px;
     margin: 0;
 }
-
 .agile-gallery-info p {
     color: #999999;
     font-size: .9em;
     line-height: 1.8em;
     margin: .5em 0 0 0;
 }
-
 .agile-gallery-info {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -575,39 +445,19 @@ span.value {
     -moz-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-
 .w3_tab_img_left:hover .agile-gallery-info {
     background: #03afdd;
     color: #FFFFFF;
 }
-
 .w3_tab_img_left:hover .agile-gallery-info p {
     color: #FFFFFF;
 }
-
-
 /*-- //gallery --*/
-
-
 /*-- Contact --*/
 
-
-
 /*-- //contact --*/
-
-
-
 /* -- Responsive code -- */
-@media screen and (max-width: 1600px){
-    
-}
-@media screen and (max-width: 1440px){}
-@media screen and (max-width: 1366px){}
-@media screen and (max-width: 1280px){}
 @media screen and (max-width: 1080px){
-    .banner-text {
-        padding: 13em 0;
-    }
     .nav-tabs {
         width: 48%;
     }
@@ -617,9 +467,6 @@ span.value {
 }
 @media screen and (max-width: 1050px){}
 @media screen and (max-width: 1024px){
-    .banner-text {
-        padding: 11em 0;
-    }
     .agile_form input[type=text],.agile_form textarea,.agile_form input[type="email"] {
         padding: 0.6em 1em;
     }
@@ -640,17 +487,7 @@ span.value {
     }
 }
 @media screen and (max-width: 991px){
-    .banner-text h1 {
-        font-size: 3.3em;
-        padding: 0 0.5em;
-    }
-    a.buy{
-        width:23%;
-    }
-    h2.w3ls-bnrtext {
-        font-size: 3.5em;
-    }
-    .agileits-about-grid p {
+    .about-grid p {
         width: 100%;
     }
     .skills-right {
@@ -687,7 +524,7 @@ span.value {
     .sub-icon {
         margin-top: 1em;
     }
-  .services-grid.agileits-w3layouts.service3,.services-w3ls-row.agileits-w3layouts.service4 {
+    .services-grid.agileits-w3layouts.service3,.services-w3ls-row.agileits-w3layouts.service4 {
         float: none;
         width: 100%;
         margin: 2em 0;
@@ -702,7 +539,7 @@ span.value {
     }
 }
 @media screen and (max-width: 900px){
-    h3.agileits-title{
+    h3.section-title{
         margin-bottom: 1.2em;
         font-size: 2.3em;
     }
@@ -711,30 +548,16 @@ span.value {
     }
 }
 @media screen and (max-width: 800px){
-    .banner-text {
-        padding: 10em 0;
-    }
-    h2.w3ls-bnrtext {
-        font-size: 3.3em;
-    }
     .agile-gallery-info h5{
         letter-spacing: 3px;
     }
 }
-
-
 @media screen and (max-width: 768px){
     .services-w3ls-row.agileits-w3layouts.service1, .services- w3ls-row.agileits-w3layouts.service4, .services-grid.agileits-w3layouts.service2{
         padding: 1em;
     }
     .services-grid.agileits-w3layouts.service3, .services-w3ls-row.agileits-w3layouts.service4{
         padding:0 2em;
-    }
-    .banner-text h1 {
-        font-size: 3.1em;
-    }
-    a.buy {
-        margin: 2.5em auto 0;
     }
 }
 @media screen and (min-width: 737px){
@@ -746,11 +569,7 @@ span.value {
     }
 }
 @media screen and (max-width: 736px){
-    
-    .banner-text {
-        padding: 8.5em 0;
-    }
-    .agileits-about-grid p {
+    .about-grid p {
         width: 96%;
     }
     .ab1 {
@@ -775,7 +594,7 @@ span.value {
     .services-w3ls-row.agileits-w3layouts.service1, .services- w3ls-row.agileits-w3layouts.service4, .services-grid.agileits-w3layouts.service2 {
        width: 45%;
     }
-    h3.agileits-title {
+    h3.section-title {
         font-size: 2.1em;
     }
 }
@@ -786,12 +605,6 @@ span.value {
     }
     .nav-tabs {
         width: 72%;
-    }
-    a.buy {
-        width: 26%;
-    }
-    .banner-text h1 {
-        font-size: 3em;
     }
 }
 @media screen and (max-width: 640px){
@@ -816,16 +629,7 @@ span.value {
     }
 }
 @media screen and (max-width: 600px){
-    .banner-text h1 {
-        font-size: 2.8em;
-    }
-    a.buy {
-        width: 30%;
-    }
-    h2.w3ls-bnrtext {
-        font-size: 3em;
-    }
-    .agileits-about-grid p {
+    .about-grid p {
         width: 92%;
     }
     .skills-right {
@@ -851,14 +655,8 @@ span.value {
     }
 }
 @media screen and (max-width: 480px){
-    h2.w3ls-bnrtext {
-        font-size: 2.8em;
-    }
     p.w3ls-p {
         font-size: 1.1em;
-    }
-    a.buy {
-        width: 40%;
     }
     .skills-right {
         width: 78%;
@@ -880,19 +678,7 @@ span.value {
     }
 }
 @media screen and (max-width: 414px){
-    .banner-text h1 {
-        font-size: 2.6em;
-    }
-    h2.w3ls-bnrtext {
-        font-size: 2.5em;
-    }
-    .banner-text {
-        padding: 7.5em 0;
-    }
-    a.buy {
-        width: 45%;
-    }
-    .agileits-about-grid p {
+    .about-grid p {
         width: 98%;
     }
     .skills-right {
@@ -914,7 +700,7 @@ span.value {
     .agileits-main-right {
         padding: 3em 2em;
     }
-    h3.agileits-title {
+    h3.section-title {
         font-size: 2em;
     }
     .services-grid img {
@@ -924,22 +710,12 @@ span.value {
         width: 26%;
         font-size: 1em;
     }
-    .agileits_w3layouts-footer {
+    .footer {
         padding: 2em 1em;
     }
 
 }
 @media screen and (max-width: 384px){
-    .banner-text {
-        padding: 6em 0;
-    }
-    h2.w3ls-bnrtext {
-        font-size: 2.31em;
-    }
-    a.buy {
-        width: 48%;
-        margin: 1.7em auto;
-    }
     .skills-right {
         padding: 0;
     }
@@ -971,7 +747,7 @@ span.value {
     .pull-right{
         float: none !important;
     }
-    h3.agileits-title.cont-w3l {
+    h3.section-title.cont-w3l {
         text-transform: capitalize;
     }
     a.wthree-.about-link{
@@ -979,27 +755,14 @@ span.value {
     }
 }
 @media screen and (max-width: 375px){
-    .banner-text h1 {
-        font-size: 2.4em;
-    }
-    .banner-text {
-        padding: 5em 0;
-    }
-    h2.w3ls-bnrtext {
-        font-size: 2.26em;
-    }
-    a.buy{
-        letter-spacing: 1px;
-        padding: 0.5em 0;
-    }
-    h3.agileits-title {
+    h3.section-title {
         margin-bottom: 0.8em;
     }
     .wthree-.about-link {
         padding: 0.5em 1.8em;
         letter-spacing: 2px;
     }
-    h4.agileinfo-head {
+    h4.about-head {
         font-size: 1.7em;
     }
     .vertical-skills li {
@@ -1017,31 +780,15 @@ span.value {
     .agileits-main-right {
         padding: 3em 1.5em;
     }
-    .agileits_w3layouts-footer {
+    .footer {
         padding: 1em 0;
     }
 }
 @media screen and (max-width: 320px){
-    .banner-text h1 {
-        font-size: 2.2em;
-    }
     .w3ls-section {
         padding: 2.7em 0;
     }
-    .banner-text {
-        padding: 4em 0 3em;
-    }
-    h2.w3ls-bnrtext span {
-        font-weight: 600;
-    }
-    h2.w3ls-bnrtext {
-        font-size: 1.88em;
-    }
-    a.buy {
-        letter-spacing: 0.5px;
-        width:53%;
-    }
-    h3.agileits-title {
+    h3.section-title {
         font-size: 1.9em;
     }
     a.wthree-.about-link{
@@ -1051,7 +798,7 @@ span.value {
     .vertical-skills li {
        margin: 0 6px;
     }
-    .agileits_w3layouts-footer {
+    .footer {
         padding: 1em 0.8em;
     }
     .vertical-skills li {
@@ -1068,13 +815,12 @@ span.value {
     }
 }
 /* -- //Responsive code -- */
-
 /*-- banner-text --*/ 
 .banner-text {
     padding:14em 0;
     text-align: left;
 }
-.banner-w3lstext {
+.banner-info {
     margin: 0 auto;
     display: inline-block;
     padding: 3.5em;

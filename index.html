@@ -1,17 +1,10 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Designer a Personal Category Bootstrap Responsive Template | Home :: w3layouts</title>
+	<title>Verónica Valenzuela</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Designer Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<meta name="keywords" content="Designer, Responsive web template, Photography, Diseño, Fotografía, Foto, Responsivo" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -21,28 +14,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<!-- Custom Theme files -->
+	<!-- Importing styles -->
 	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-	<!--gallery -->
 	<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
-	<!-- //gallery -->
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 	<link href="css/font-awesome.css" rel="stylesheet">
-	<!-- font-awesome icons -->
-	<!--//Custom Theme files-->
-	<!-- js -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- //js -->
-	<!-- web-fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
-	<!-- //web-fonts -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 </head>
-
 <body>
 	<!-- banner -->
 	<div id="home" class="banner">
-		<div class="banner-agileinfo">
+		<div class="banner-container">
 			<!-- header -->
 			<div class="header">
 				<div class="container">
@@ -56,26 +39,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<a href="#services" class="scroll">Services</a>
 							<a href="#contact" class="scroll">Contact</a>
 						</nav>
-						<script>
-							(function ($) {
-								// Menu Functions
-								$(document).ready(function () {
-									$('#menuToggle').click(function (e) {
-										var $parent = $(this).parent('.menu');
-										$parent.toggleClass("open");
-										var navState = $parent.hasClass('open') ? "hide" : "show";
-										$(this).attr("title", navState + " navigation");
-										// Set the timeout to the animation length in the CSS.
-										setTimeout(function () {
-											console.log("timeout set");
-											$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
-										}, 200);
-										e.preventDefault();
-									});
-								});
-							})(jQuery);
-						</script>
-
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -83,28 +46,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- //header -->
 			<div class="banner-text"> 
 				<div class="container"> 
-					<div class="banner-w3lstext"> 
+					<div class="banner-info"> 
 						<h2>WIKOLIA<span>Iam a Web Designer</span></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div> 
 				</div>
 			</div>
-			<!--<div class="banner-text">
-				<div class="container">
-					<h1><a href="index.html">Mathew</a></h1>
-					<h2 class="w3ls-bnrtext">I am <span> UX </span>& <span>UI </span> Designer</h2>
-					<p class="w3ls-p">an interactive web designer with the passion for creativity</p>
-					<a href="#about" class="buy btn-wayra scroll">Explore my work</a>
-				</div>
-			</div>-->
 		</div>
 	</div>
 	<!-- //banner -->
 	<!-- about -->
-	<div class="agile-about w3ls-section text-center" id="about">
+	<div class="about w3ls-section text-center" id="about">
 		<div class="container">
-			<h3 class="agileits-title">about me</h3>
-			<div class="agileits-about-grid">
+			<h3 class="section-title">about me</h3>
+			<div class="about-grid">
 				<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, sunt in culpa qui officia
 					deserunt mollit anim id est laboth. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 					fugiat nulla pariatur sunt in culpa qui .</p>
@@ -114,12 +69,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- //about -->
 	<!-- about-bottom -->
-	<div class="agileits-about-btm">
+	<div class="about-btm">
 		<div class="container">
 			<div class="w3-flex">
-			<div class="col-md-4 col-sm-4 col-xs-12 ab1 agileits-about-grid1">
+			<div class="col-md-4 col-sm-4 col-xs-12 ab1 about-grid1">
 				<span class="fa fa-trophy" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">Certificaciones</h4>
+				<h4 class="about-head">Certificaciones</h4>
 				<h5>Una de Google</h5>
 				<p>Google</p>
 				<h5>site of the day</h5>
@@ -127,18 +82,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h5>premier UX award</h5>
 				<p>Ncididunt ut labore et t enim ad minim.</p>
 			</div>
-			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid2">
-				<span class="fa fa-graduation-cap  wthree-title-list" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">educación</h4>
+			<div class="col-md-4 col-sm-4 ab1 about-grid2">
+				<span class="fa fa-graduation-cap  title-list" aria-hidden="true"></span>
+				<h4 class="about-head">educación</h4>
 				<h5>Ing. en Sistemas Computacionales</h5>
 				<p>Instituto Tecnológico de Culiacán</p>
 				<h5>Administración y desarrollo de negocios</h5>
 				<p>Colegio de Bachilleres del Estado de Sinaloa</p>
-				
 			</div>
-			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">
-				<span class="fa fa-shield  wthree-title-list" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">expertise</h4>
+			<div class="col-md-4 col-sm-4 ab1 about-grid3">
+				<span class="fa fa-shield  title-list" aria-hidden="true"></span>
+				<h4 class="about-head">expertise</h4>
 				<h5>Senior Interface Designer</h5>
 				<p>20XX-20XX</p>
 				<h5>Graphic Designer</h5>
@@ -152,10 +106,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- //about-bottom -->
 	<!-- skills -->
-	<div class="agile-service w3ls-section" id="skills">
+	<div class="service w3ls-section" id="skills">
 		<div class="container">
-			<div class="col-md-5 w3_agileits-service-left">
-				<h3 class="agileits-title">skills</h3>
+			<div class="col-md-5 service-left">
+				<h3 class="section-title">skills</h3>
 				<p>Ncididunt ut labore et t enim ad minim.cididunt ut labore et t enim ad minim.Ncididunt ut labore et t enim ad minim labore
 					et t enim ad minim.Ncididunt ut labore et t enim a.</p>
 			</div>
@@ -182,7 +136,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<div class="w3ls-section agileits-gallery" id="gallery">
 		<div class="container">
-			<h3 class="agileits-title">MY work</h3>
+			<h3 class="section-title">MY work</h3>
 			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 				<ul id="myTab" class="nav nav-tabs" role="tablist">
 					<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home-main" aria-expanded="true">Show all</a></li>
@@ -418,7 +372,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 		</div>
-		<script src="js/jquery.tools.min.js"></script>
+	</div>
+	<!-- //menu -->
+	
+	<!-- contact -->
+	
+	<!-- //contact -->
+	<div class="banner-info">
+		<p>© 2017 Verónica Valenzuela. All rights reserved</p>
+	</div>
+	<!-- Importing scripts -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery.tools.min.js"></script>
 		<script src="js/jquery.mobile.custom.min.js"></script>
 		<script src="js/jquery.cm-overlay.js"></script>
 		<script>
@@ -426,54 +391,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				$('.cm-overlay').cmOverlay();
 			});
 		</script>
-	</div>
-	<!-- //menu -->
-	
-	<!-- contact -->
-	
-
-
-	<!-- //contact -->
-	<div class="agileits_w3layouts-footer">
-		<p>© 2017 Designer. All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
-	</div>
-	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-
-		});
-	</script>
-<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
+		<script>
+			(function ($) {
+				// Menu Functions
+				$(document).ready(function () {
+					$('#menuToggle').click(function (e) {
+						var $parent = $(this).parent('.menu');
+						$parent.toggleClass("open");
+						var navState = $parent.hasClass('open') ? "hide" : "show";
+						$(this).attr("title", navState + " navigation");
+						// Set the timeout to the animation length in the CSS.
+						setTimeout(function () {
+							console.log("timeout set");
+							$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+						}, 200);
+						e.preventDefault();
+					});
+				});
+			})(jQuery);
+		</script>
 	<script src="js/bootstrap.js"></script>
 </body>
 </html>
