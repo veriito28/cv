@@ -26,37 +26,44 @@
 	<!-- banner -->
 	<div id="home" class="banner">
 		<div class="banner-container">
+
 			<!-- header -->
 			<div class="header">
 				<div class="container">
 					<div class="menu">
 						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
 						<nav>
-							<a href="#home" class="active scroll">Home</a>
-							<a href="#about" class="scroll">About Me</a>
-							<a href="#skills" class="scroll">Skills</a>
-							<a href="#gallery" class="scroll">My Work</a>
-							<a href="#services" class="scroll">Services</a>
-							<a href="#contact" class="scroll">Contact</a>
+							<a href="#home" class="active scroll">Inicio</a>
+							<a href="#about" class="scroll">Acerca de mi</a>
+							<a href="#skills" class="scroll">Habilidades</a>
+							<a href="#gallery" class="scroll">Portafolio</a>
+							<a href="#hire" class="scroll">Contacto</a>
 						</nav>
+
 					</div>
 					<div class="clearfix"> </div>
+					
 				</div>
 			</div>
 			<!-- //header -->
+			<video autoplay loop>
+				<source src="assets/video/studio3.mp4" type="video/mp4">
+			</video>
+			
 			<div class="banner-text"> 
 				<div class="container"> 
 					<div class="banner-info"> 
-						<h2>WIKOLIA<span>Iam a Web Designer</span></h2>
+						<h2>VERONICA<span>Fotografía y Vídeo</span></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</div> 
 				</div>
 			</div>
+			
 		</div>
 	</div>
 	<!-- //banner -->
 	<!-- about -->
-	<div class="about w3ls-section text-center" id="about">
+	<div class="about w3ls-section text-center" id="about" style="background: #313A3D;">
 		<div class="container">
 			<h3 class="section-title">about me</h3>
 			<div class="about-grid">
@@ -69,7 +76,7 @@
 	</div>
 	<!-- //about -->
 	<!-- about-bottom -->
-	<div class="about-btm">
+	<div class="about-btm" style="background: #313A3D;">
 		<div class="container">
 			<div class="w3-flex">
 			<div class="col-md-4 col-sm-4 col-xs-12 ab1 about-grid1">
@@ -106,7 +113,7 @@
 	</div>
 	<!-- //about-bottom -->
 	<!-- skills -->
-	<div class="service w3ls-section" id="skills">
+	<div class="service w3ls-section" id="skills" style="background:url('assets/img/1.jpg');background-size:100%;">
 		<div class="container">
 			<div class="col-md-5 service-left">
 				<h3 class="section-title">skills</h3>
@@ -134,7 +141,7 @@
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<div class="w3ls-section agileits-gallery" id="gallery">
+	<div class="w3ls-section agileits-gallery" id="gallery" style="background: white;">
 		<div class="container">
 			<h3 class="section-title">MY work</h3>
 			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
@@ -376,7 +383,31 @@
 	<!-- //menu -->
 	
 	<!-- contact -->
-	
+	<section id="hire">
+	    <h1>Contact Me</h1>
+	    
+	    <form>
+		      <div class="field name-box">
+			        <input type="text" id="name" placeholder="Who Are You?"/>
+	        		<label for="name">Name</label>
+			        <span class="ss-icon">check</span>
+		      </div>
+
+		      <div class="field email-box">
+			        <input type="text" id="email" placeholder="name@email.com"/>
+			        <label for="email">Email</label>
+			        <span class="ss-icon">check</span>
+		      </div>
+
+		      <div class="field msg-box">
+			        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+			        <label for="msg">Msg</label>
+			        <span class="ss-icon">check</span>
+		      </div>
+
+		      <input class="button" type="submit" value="Send" />
+	  </form>
+	</section>
 	<!-- //contact -->
 	<div class="banner-info">
 		<p>© 2017 Verónica Valenzuela. All rights reserved</p>
@@ -409,6 +440,50 @@
 					});
 				});
 			})(jQuery);
+		</script>
+		<script>
+			// Input Lock
+$('textarea').blur(function () {
+    $('#hire textarea').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('textarea + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('textarea + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:first-child input').blur(function () {
+    $('#hire .field:first-child input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:nth-child(2) input').blur(function () {
+    $('#hire .field:nth-child(2) input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+        }
+    });
+});
 		</script>
 	<script src="js/bootstrap.js"></script>
 </body>
