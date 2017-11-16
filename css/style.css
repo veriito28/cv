@@ -185,13 +185,13 @@ a.wthree-.about-link {
     width: 80%;
     margin: 0 auto;
 }
-.about-grid1 {
-    background: #7bd0c1;
+.about-grid1, .about-grid3 {
+    background: white;
+}
+.about-grid1 p, .about-grid1 span, .about-grid2 p, .about-grid3 p, .about-grid3 span {
+    color: #313A3D !important;
 }
 .about-grid2 {
-    background: #f2849e;
-}
-.about-grid3 {
     background: #7ecaf6;
 }
 .about-btm {
@@ -891,7 +891,7 @@ body section {
   padding: 50px 0 110px;
   width: 100%;
   font-size: 62.5%;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 300;
   color: #B6B6B6;
 }
@@ -899,7 +899,7 @@ body section h1 {
   margin-bottom: 40px;
   font-size: 4em;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 100;
 }
 form {
@@ -1003,7 +1003,7 @@ form input[type="submit"] {
   padding: 13px 50px;
   font-size: 1.4em;
   letter-spacing: 0.1em;
-  font-family: 'Lato', sans-serif;
+  font-family: '', sans-serif;
   font-weight: 300;
   -webkit-transition: all 333ms ease-in-out;
   -moz-transition: all 333ms ease-in-out;
@@ -1018,4 +1018,16 @@ form input[type="submit"]:hover {
 form input[type="submit"]:focus {
   outline: none;
   background: #cd6302;
+}
+#about .container h3, #about .container p {
+    color: white;
+}
+footer {
+    width: 100%;
+    padding: 2em 0;
+    background-color: #313A3D;
+    text-align: center;
+}
+footer p {
+    color: white;
 }
