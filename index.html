@@ -74,7 +74,7 @@
 				<p>Ncididunt ut labore et t enim ad minim.</p>
 			</div>
 			<div class="col-md-4 col-sm-4 ab1 about-grid2">
-				<span class="fa fa-graduation-cap  title-list" aria-hidden="true"></span>
+				<span class="fa fa-graduation-cap	title-list" aria-hidden="true"></span>
 				<h4 class="about-head">educación</h4>
 				<h5>Ing. en Sistemas Computacionales</h5>
 				<p>Instituto Tecnológico de Culiacán</p>
@@ -82,7 +82,7 @@
 				<p>Colegio de Bachilleres del Estado de Sinaloa</p>
 			</div>
 			<div class="col-md-4 col-sm-4 ab1 about-grid3">
-				<span class="fa fa-shield  title-list" aria-hidden="true"></span>
+				<span class="fa fa-shield	title-list" aria-hidden="true"></span>
 				<h4 class="about-head">expertise</h4>
 				<h5>Senior Interface Designer</h5>
 				<p>20XX-20XX</p>
@@ -105,7 +105,7 @@
 					et t enim ad minim.Ncididunt ut labore et t enim a.</p>
 			</div>
 			<div class="col-md-7 skills-right">
-				<div class="vertical-skills  pull-right xs-center">
+				<div class="vertical-skills	pull-right xs-center">
 					<ul class="list-inline">
 						<li>
 							<div class="skill" style="height:100%; background:#ff9d0d;"><span class="value">100%</span></div><span class="title">HTML</span></li>
@@ -166,28 +166,28 @@
 	<!-- //menu -->
 	<!-- contact -->
 	<section id="hire">
-	    <h1>Contacto</h1>
-	    <form>
-		      <div class="field name-box">
-			        <input type="text" id="name" placeholder="¿Quién eres?"/>
-	        		<label for="name">Nombre</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+		<h1>Contacto</h1>
+		<form action="php/sendmail.php" method="POST">
+				<div class="field name-box">
+					<input type="text" id="name" name="name" placeholder="¿Quién eres?" required/>
+					<label for="name">Nombre</label>
+					<span class="ss-icon">✓</span>
+				</div>
 
-		      <div class="field email-box">
-			        <input type="text" id="email" placeholder="correo@ejemplo.com"/>
-			        <label for="email">Correo</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+				<div class="field email-box">
+					<input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required/>
+					<label for="email">Correo</label>
+					<span class="ss-icon">✓</span>
+				</div>
 
-		      <div class="field msg-box">
-			        <textarea id="msg" rows="4" placeholder="Tu mensaje va aquí..."/></textarea>
-			        <label for="msg">Mensaje</label>
-			        <span class="ss-icon">check</span>
-		      </div>
+				<div class="field msg-box">
+					<textarea id="msg" name="msg" rows="4" placeholder="Tu mensaje va aquí..." required/></textarea>
+					<label for="msg">Mensaje</label>
+					<span class="ss-icon">✓</span>
+				</div>
 
-		      <input class="button" type="submit" value="Enviar" />
-	  </form>
+				<input class="button" type="submit" name="submit" value="Enviar" />
+		</form>
 	</section>
 	<!-- //contact -->
 	<footer>
@@ -196,76 +196,76 @@
 	<!-- Importing scripts -->
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/jquery.tools.min.js"></script>
-		<script src="js/jquery.mobile.custom.min.js"></script>
-		<script src="js/jquery.cm-overlay.js"></script>
-		<script>
+	<script src="js/jquery.mobile.custom.min.js"></script>
+	<script src="js/jquery.cm-overlay.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.cm-overlay').cmOverlay();
+		});
+	</script>
+	<script>
+		(function ($) {
+			// Menu Functions
 			$(document).ready(function () {
-				$('.cm-overlay').cmOverlay();
-			});
-		</script>
-		<script>
-			(function ($) {
-				// Menu Functions
-				$(document).ready(function () {
-					$('#menuToggle').click(function (e) {
-						var $parent = $(this).parent('.menu');
-						$parent.toggleClass("open");
-						var navState = $parent.hasClass('open') ? "hide" : "show";
-						$(this).attr("title", navState + " navigation");
-						// Set the timeout to the animation length in the CSS.
-						setTimeout(function () {
-							console.log("timeout set");
-							$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
-						}, 200);
-						e.preventDefault();
-					});
+				$('#menuToggle').click(function (e) {
+					var $parent = $(this).parent('.menu');
+					$parent.toggleClass("open");
+					var navState = $parent.hasClass('open') ? "hide" : "show";
+					$(this).attr("title", navState + " navigation");
+					// Set the timeout to the animation length in the CSS.
+					setTimeout(function () {
+						console.log("timeout set");
+						$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+					}, 200);
+					e.preventDefault();
 				});
-			})(jQuery);
-		</script>
-		<script>
-			// Input Lock
-$('textarea').blur(function () {
-    $('#hire textarea').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('textarea + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('textarea + label + span').css({'opacity': 0});
-        }
-    });
-});
+			});
+		})(jQuery);
+	</script>
+	<script>
+		// Input Lock
+		$('textarea').blur(function () {
+			$('#hire textarea').each(function () {
+				$this = $(this);
+				if ( this.value != '' ) {
+					$this.addClass('focused');
+					$('textarea + label + span').css({'opacity': 1});
+				}
+				else {
+					$this.removeClass('focused');
+					$('textarea + label + span').css({'opacity': 0});
+				}
+			});
+		});
 
-$('#hire .field:first-child input').blur(function () {
-    $('#hire .field:first-child input').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('.field:first-child input + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('.field:first-child input + label + span').css({'opacity': 0});
-        }
-    });
-});
+		$('#hire .field:first-child input').blur(function () {
+			$('#hire .field:first-child input').each(function () {
+				$this = $(this);
+				if ( this.value != '' ) {
+					$this.addClass('focused');
+					$('.field:first-child input + label + span').css({'opacity': 1});
+				}
+				else {
+					$this.removeClass('focused');
+					$('.field:first-child input + label + span').css({'opacity': 0});
+				}
+			});
+		});
 
-$('#hire .field:nth-child(2) input').blur(function () {
-    $('#hire .field:nth-child(2) input').each(function () {
-        $this = $(this);
-        if ( this.value != '' ) {
-          $this.addClass('focused');
-          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
-        }
-        else {
-          $this.removeClass('focused');
-          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
-        }
-    });
-});
-		</script>
+		$('#hire .field:nth-child(2) input').blur(function () {
+			$('#hire .field:nth-child(2) input').each(function () {
+				$this = $(this);
+				if ( this.value != '' ) {
+					$this.addClass('focused');
+					$('.field:nth-child(2) input + label + span').css({'opacity': 1});
+				}
+				else {
+					$this.removeClass('focused');
+					$('.field:nth-child(2) input + label + span').css({'opacity': 0});
+				}
+			});
+		});
+	</script>
 	<script src="js/bootstrap.js"></script>
 	<script src="work.json"></script>
 	<script src="js/work.js"></script>
